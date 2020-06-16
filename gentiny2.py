@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 #https://github.com/AngelSecurityTeam/GenTiny
-import requests,os,sys
+try:
+    from urllib.request import urlopen
+except ImportError:
+    from urllib2 import urlopen
 cyan= '\033[36m'
 bold= '\033[1m'
 end= '\033[0m'
